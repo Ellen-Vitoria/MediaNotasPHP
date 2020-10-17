@@ -13,7 +13,7 @@ class Situation extends Student implements Average
         }
         else
         {
-            return "Rep.!";
+            return "Reprovado";
         }
     }
 }
