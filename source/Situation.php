@@ -2,8 +2,8 @@
 
 class Situation extends Student implements Average
 {
-    public function getAverage(){
-        return ($this->grade1 + $this->grade2 + $this->grade3 + $this->grade4)/4;
+    public function getAverage($grade1, $grade2, $grade3, $grade4){
+        return ($grade1 + $grade2 + $grade3 + $grade4)/4;
     }
 
     public function getSituation($average){
@@ -19,5 +19,5 @@ class Situation extends Student implements Average
 }
 
 interface Average{
-    public function getAverage();
+    public function getAverage($grade1, $grade2, $grade3, $grade4);
 }
