@@ -2,27 +2,18 @@
 
 class Student
 {
-    private $firstName;
-    private $lastName;
+    private $name;
     private $grade1;
     private $grade2;
     private $grade3;
     private $grade4;
 
-    public function getFirstName(){
-       return $this->firstName;
+    public function getName(){
+       return $this->name;
     }
 
-    public function setFirstName($fname){
-        $this->firstname = $fname;
-    }
-
-    public function getLastName(){
-        return $this->lastName;
-    }
-
-    public function setLastName($lname){
-        $this->lastName = $lname;
+    public function setName($name){
+        $this->name = $name;
     }
 
     public function getGrade1(){
